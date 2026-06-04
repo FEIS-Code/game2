@@ -1,18 +1,24 @@
-Hi everyone! Today, I want to show you a hidden security trap that full-stack developers face when deploying to the cloud.
+🎬 Speaker Intro Video Script: Securing AI Agents (Updated)
+Target Duration: ~1:45 - 2:00 minutes
+Tone: Confident, urgent, and technically authoritative
 
-Imagine you build a web app using React and Java Spring Boot, hosted on AWS. To deploy it quickly, you let an AI write your Dockerfile. It works perfectly, but you've unknowingly walked into a security trap."
+(0:00 - 0:15) The Hook
+[Look directly into the camera, energetic and serious]
+"Hi everyone, I'm Saikrishna Kotnala. Let's face it: in the world of enterprise architecture, everything has changed. We are rapidly deploying generative AI, but our security models are stuck in the past."
 
-[0:15 - 0:35] The Hidden Danger
-"The trap is container bloat. Standard templates package a full Linux operating system inside your container. Your app only needs Java to run, but it gets packed with terminal shells and package managers.
+(0:15 - 0:35) Establishing Credibility
+"As an Associate Vice President here at JPMorgan Chase, my work is deeply embedded in advanced AI development and agentic workflows. Combining this hands-on experience with my postgraduate specialization in AI and Machine Learning from BITS Pilani, I've seen firsthand that while autonomous agents are incredibly powerful, they are dynamically bypassing our legacy security frameworks."
 
-If a hacker exploits a dependency flaw—like Spring4Shell—they can drop a malicious file onto your server. To take over your AWS cloud, they rely on those built-in terminal tools to execute it."
+(0:35 - 1:00) The Problem
+[Slightly shift posture, emphasizing the risk]
+"Here is the hard truth: traditional Role-Based Access Control, or RBAC, is dead when it comes to AI. Dynamic AI interactions make static RBAC obsolete. If our engineering squads don't adapt immediately, we risk severe data exfiltration through prompt injection attacks, which could completely halt our AI innovation."
 
-[0:35 - 0:50] The Solution
-"My project fixes this using a Multi-Stage Distroless Build.
+(1:00 - 1:25) The Solution & Session Value
+"That is exactly why I'm proposing my session: Securing AI Agents. We are going to dive into Relationship-Based Access Control—ReBAC—using the Zanzibar-inspired SpiceDB framework. We won't just talk theory. I will show you how to definitively secure enterprise RAG pipelines by enforcing non-skippable, pre-filter authorization nodes."
 
-We use standard tools to compile our React and Java code, but for production on AWS, we strip everything else out. We copy our app into a completely empty, shell-free container. It contains only the Java runtime and our app files."
+(1:25 - 1:45) The Teaser
+"During the session, I’ll demo how to write a SpiceDB schema for an AI document assistant and execute a secured RAG query. We will also tackle the real-world trade-offs between latency overhead and necessary enterprise security guarantees."
 
-[0:50 - 1:05] The Result
-"Now, if an attack happens, the exploit instantly crashes because /bin/sh literally does not exist. The exploit chain is broken.
-
-By removing the tools hackers use, we ensure our app can run its code, but a hacker cannot run theirs. Thank you!"
+(1:45 - 2:00) The Call to Action
+[Smile, confident finish]
+"If you are in platform engineering, cybersecurity, or data science, you need this blueprint to ensure your AI agents are cryptographically restricted from accessing unauthorized data. Vote for this session, and let's safely modernize our AI infrastructure without compromising trust. Thank you."

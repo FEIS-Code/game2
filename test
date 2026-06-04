@@ -1,0 +1,18 @@
+Hi everyone! Today, I want to show you a hidden security trap that full-stack developers face when deploying to the cloud.
+
+Imagine you build a web app using React and Java Spring Boot, hosted on AWS. To deploy it quickly, you let an AI write your Dockerfile. It works perfectly, but you've unknowingly walked into a security trap."
+
+[0:15 - 0:35] The Hidden Danger
+"The trap is container bloat. Standard templates package a full Linux operating system inside your container. Your app only needs Java to run, but it gets packed with terminal shells and package managers.
+
+If a hacker exploits a dependency flaw—like Spring4Shell—they can drop a malicious file onto your server. To take over your AWS cloud, they rely on those built-in terminal tools to execute it."
+
+[0:35 - 0:50] The Solution
+"My project fixes this using a Multi-Stage Distroless Build.
+
+We use standard tools to compile our React and Java code, but for production on AWS, we strip everything else out. We copy our app into a completely empty, shell-free container. It contains only the Java runtime and our app files."
+
+[0:50 - 1:05] The Result
+"Now, if an attack happens, the exploit instantly crashes because /bin/sh literally does not exist. The exploit chain is broken.
+
+By removing the tools hackers use, we ensure our app can run its code, but a hacker cannot run theirs. Thank you!"

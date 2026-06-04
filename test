@@ -22,3 +22,29 @@ Tone: Confident, urgent, and technically authoritative
 (1:45 - 2:00) The Call to Action
 [Smile, confident finish]
 "If you are in platform engineering, cybersecurity, or data science, you need this blueprint to ensure your AI agents are cryptographically restricted from accessing unauthorized data. Vote for this session, and let's safely modernize our AI infrastructure without compromising trust. Thank you."
+
+
+
+Target Duration: ~1:45 - 2:00 minutes
+Tone: Hands-on, authoritative, and solution-oriented
+
+(0:00 - 0:15) The Hook
+[Look directly into the camera, confident and engaged]
+"Hi everyone, I'm Saikrishna Kotnala. When it comes to building enterprise AI, everything has changed. Simple prompting is no longer enough. We are rapidly shifting from static chat inputs to autonomous AI agents, but standard coding tools are losing context and hallucinating."
+
+(0:15 - 0:35) Establishing Credibility
+"As an Associate Vice President here at JPMorgan Chase with a postgraduate background in AI and Machine Learning from BITS Pilani, I specialize in designing zero-trust AI architectures. I see firsthand how runaway token costs and unreliable reasoning are creating massive bottlenecks in our GenAI initiatives."
+
+(0:35 - 1:00) The Problem
+[Slightly shift posture, emphasizing the operational pain point]
+"Right now, as developers, SREs, and architects work to modernize applications and move them to the cloud, our AI tools struggle to understand massive repositories. Without deep system context, agents make critical prompt errors, waste expensive tokens, and leave us stuck doing manual code reviews."
+
+(1:00 - 1:25) The Solution & Session Value
+"That is why I am hosting a hands-on lab: Grounding AI Agents in Neo4j to Prevent LLM Hallucinations. I am going to show you how to move from stateless prompting to active context engineering. We will build robust pipelines using the open-source Model Context Protocol—MCP—to connect LLMs directly to Neo4j graph databases."
+
+(1:25 - 1:45) The Teaser
+"This isn't a lecture; it's a 1 hour and 45-minute lab where you will get your hands dirty. We will model microservice dependencies, spin up a local Neo4j MCP server, implement active context-reduction algorithms, and orchestrate an AI agent to resolve a complex, multi-hop system bug in a live sandbox."
+
+(1:45 - 2:00) The Call to Action
+[Smile, strong finish]
+"If you want to cut LLM token costs and eliminate prompt drift, this lab will give you the practical blueprint to bridge the prototype-to-production gap. Vote for this lab, and let's build context-aware AI that we can actually trust. Thank you."
